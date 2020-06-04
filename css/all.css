@@ -1,77 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+	font-family: 'Noto Sans TC', sans-serif;
 }
-html,
-body {
-    height: 100%;
+.container h1 {
+	font-size: 80px;
 }
-body {
-    background: linear-gradient(0deg, #fcf, #ccf);
+@media(max-width: 567px){
+	.container h1 {
+		font-size: 50px;
+	}
 }
-.wrap {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+.container input {
+	font-size: 25px;
 }
-.container form {
-    display: flex;
-    margin: 20px 0;
+.container button {
+	font-size: 25px;
 }
-.container .send,
-.container .text {
-    padding: 15px 10px;
-    border: none;
-    border: 1px solid #000;
+
+.sort {
+	font-size: 20px;
 }
-.container .send:focus,
-.container .text:focus {
-    outline-style: none;
+
+.list {
+	border: 1px solid #ccc;
 }
-.container .send {
-    width: 50px;
-    border-radius: 100px 0 0 100px;
-    background: #000;
-    font-size: 20px;
-    color: #fff;
+.list label {
+	font-size: 20px;
+	line-height: 20px;
 }
-.container .text {
-    width: 850px;
-    border-radius: 0 100px 100px 0;
-    font-size: 20px;
+.list .form-check-input {
+	line-height: 20px;
+	width: 1rem;
+	height: 1rem;
 }
-.container .list {
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    width: 800px;
-    margin: auto;
+
+
+.sort-all {
+	border-radius: 25% 25% 0 0;
+	background-color: rgb(255, 202, 142);
 }
-.container li {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #fff;
-    margin: 0 10px 20px;
-    border: 1px solid #000;
-    border-radius: 100px;
-    height: 40px;
-    line-height: 40px;
+.sort-active {
+	border-radius: 25% 25% 0 0;
+	background-color: rgb(142, 204, 255);
 }
-.container li span {
-    font-size: 20px;
-    color: #999;
+.sort-completed {
+	border-radius: 25% 25% 0 0;
+	background-color: rgb(255, 142, 195);
 }
-.container li a,
-.container li i {
-    border-radius: 0 100px 100px 0;
+
+.list-all {
+	border: 2px solid rgb(255, 202, 142);
 }
-.container li i {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 20px;
+.list-active {
+	border: 2px solid rgb(142, 204, 255);
+}
+.list-completed {
+	border: 2px solid rgb(255, 142, 195);
+}
+
+.completed {
+	text-decoration: line-through
 }
